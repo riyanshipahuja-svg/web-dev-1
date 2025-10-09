@@ -1,0 +1,162 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #F4F6F8;
+  color: #2E2E2E;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1E3A5F;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #2C3E50;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #3C91E6;
+}
+
+/* Sections */
+h2, h3 {
+  color: #1E3A5F;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  max-width: 800px;
+}
+
+/* Profile image */
+img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Projects list */
+ul li b {
+  color: #2B6CB0;
+}
+
+/* Skills table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  max-width: 700px;
+}
+
+table th, table td {
+  border: 1px solid #D1D5DB;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #DCEAF8;
+}
+
+table tr:nth-child(even) {
+  background-color: #EEF2F7;
+}
+
+/* Contact form */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #3C91E6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2B6CB0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    margin: 10px 0;
+  }
+
+  table, form {
+    width: 100%;
+  }
+}
